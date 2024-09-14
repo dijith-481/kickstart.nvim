@@ -1,26 +1,26 @@
 return {
-  "nvim-tree/nvim-tree.lua",
-  version = "*",
+  'nvim-tree/nvim-tree.lua',
+  version = '*',
   lazy = false,
   keys = {
-    { "<leader>e", "<cmd>NvimTreeToggle<CR>", desc = "NvimTree" },
+    { '<leader>e', '<cmd>NvimTreeToggle<CR>', desc = 'NvimTree' },
   },
   dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    'nvim-tree/nvim-web-devicons',
   },
   config = function()
-    require("nvim-tree").setup({
+    require('nvim-tree').setup {
       renderer = {
         icons = {
           show = {
             folder = true,
           },
-          -- glyphs = {
-          --   folder = {
-          --     arrow_closed = "﬌",
-          --     arrow_open = "",
-          --   },
-          -- },
+          glyphs = {
+            folder = {
+              arrow_closed = '﬌',
+              arrow_open = '',
+            },
+          },
         },
         indent_markers = {
           enable = true,
@@ -30,8 +30,8 @@ return {
         dotfiles = true,
       },
       view = {
-        side = "right",
+        side = 'right',
       },
-    })
+    }
   end,
 }
